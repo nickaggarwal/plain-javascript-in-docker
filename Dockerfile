@@ -7,10 +7,14 @@ WORKDIR /var/app
 
 ADD . .
 
-RUN npm install -g @angular/cli
+# Build the app
+RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/web-micro-project/javascript/vanilla-javascript/build.sh
+RUN chmod 775 ./build.sh
+RUN ./build.sh
 
-RUN npm install -g http-server
+# Add missing docker commands here (if any)...
 
-RUN chmod 775 "./start.sh"
-
-CMD "./start.sh"
+# Run the app
+RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/web-micro-project/javascript/vanilla-javascript/run.sh
+RUN chmod 775 ./run.sh
+CMD ./run.sh
