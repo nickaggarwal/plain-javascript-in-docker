@@ -12,7 +12,7 @@ RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/we
 RUN chmod 775 ./build.sh
 RUN ./build.sh
 
-# Add missing docker commands here (if any)...
+# Add docker commands here (if any)...
 
 # Run the app
 RUN wget https://codejudge-starter-repo-artifacts.s3.ap-south-1.amazonaws.com/web-micro-project/javascript/vanilla-javascript/run.sh
