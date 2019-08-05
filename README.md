@@ -25,14 +25,14 @@ DOCKER START STEPS:
     1. Build the docker image:
         1.a. Go to the project root directory.
         1.b. Run the following command(s) in the terminal/command line:
-            - docker build -t cj-js-app .
+            - docker build -t cj-app .
 
     2. Run the image in a container (Make sure port 4200 is available):        
         2.a. Run the following command(s) in the terminal/command line:
-            - docker run -i -p4200:4200 cj-js-app
+            - docker run -i -p4200:4200 cj-app
         2.b. Check the logs for any errors. 
 
-    3. Go to http://localhost:<port_number>/ in your browser to view it.
+    3. Go to http://localhost:4200 in your browser to view it.
 
 DOCKER STOP STEPS:
 
